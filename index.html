@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abidemi — Front-End Developer</title>
+<link rel="stylesheet" href="Styles.css">
+ <link rel="" href="script.js">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo">abidemi<span class="dot">.</span></a>
+
+  <nav class="nav__tabs" aria-label="Primary">
+    <a href="#work" class="tab" data-target="work">
+      <span class="tab__name">work</span><span class="tab__ext">.js</span>
+    </a>
+    <a href="#about" class="tab" data-target="about">
+      <span class="tab__name">about</span><span class="tab__ext">.md</span>
+    </a>
+    <a href="#contact" class="tab" data-target="contact">
+      <span class="tab__name">contact</span><span class="tab__ext">.sh</span>
+    </a>
+  </nav>
+
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero__text reveal">
+    <p class="eyebrow">// front-end developer</p>
+    <h1 class="hero__title">
+      Abidemi builds interfaces that feel <em>inevitable.</em>
+    </h1>
+    <p class="hero__sub">
+      I turn designs into fast, accessible, well-behaved products —
+      the kind that don't call attention to themselves, they just work.
+    </p>
+    <div class="hero__cta">
+      <a href="#work" class="btn btn--primary">View work</a>
+      <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="hero__editor reveal" aria-hidden="true">
+    <div class="editor">
+      <div class="editor__bar">
+        <span class="editor__dot editor__dot--r"></span>
+        <span class="editor__dot editor__dot--y"></span>
+        <span class="editor__dot editor__dot--g"></span>
+        <span class="editor__filename">profile.js</span>
+      </div>
+      <pre class="editor__body"><code id="typeTarget"></code><span class="caret" id="caret">&nbsp;</span></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="work" id="work">
+  <div class="section__head reveal">
+    <p class="eyebrow">// selected work</p>
+    <h2>Things I've shipped</h2>
+  </div>
+
+  <div class="work__grid">
+
+    <article class="card reveal">
+      <div class="card__window">
+        <div class="card__bar">
+          <span class="card__dot"></span><span class="card__dot"></span><span class="card__dot"></span>
+        </div>
+        <div class="card__preview card__preview--a"></div>
+      </div>
+      <div class="card__body">
+        <h3>Northwind Storefront</h3>
+        <p>A component-driven e-commerce front end with optimistic cart updates and sub-second route transitions.</p>
+        <ul class="card__stack">
+          <li>React</li><li>TypeScript</li><li>Tailwind</li>
+        </ul>
+      </div>
+      <a href="#" class="card__link">View project →</a>
+    </article>
+
+    <article class="card reveal">
+      <div class="card__window">
+        <div class="card__bar">
+          <span class="card__dot"></span><span class="card__dot"></span><span class="card__dot"></span>
+        </div>
+        <div class="card__preview card__preview--b"></div>
+      </div>
+      <div class="card__body">
+        <h3>Atlas Design System</h3>
+        <p>A themeable component library and documentation site adopted across four product teams.</p>
+        <ul class="card__stack">
+          <li>Vue</li><li>Storybook</li><li>SCSS</li>
+        </ul>
+      </div>
+      <a href="#" class="card__link">View project →</a>
+    </article>
+
+    <article class="card reveal">
+      <div class="card__window">
+        <div class="card__bar">
+          <span class="card__dot"></span><span class="card__dot"></span><span class="card__dot"></span>
+        </div>
+        <div class="card__preview card__preview--c"></div>
+      </div>
+      <div class="card__body">
+        <h3>Pulse Analytics Dashboard</h3>
+        <p>Real-time charts and filtering over large datasets, built for clarity under pressure.</p>
+        <ul class="card__stack">
+          <li>Svelte</li><li>D3</li><li>WebSockets</li>
+        </ul>
+      </div>
+      <a href="#" class="card__link">View project →</a>
+    </article>
+
+    <article class="card reveal">
+      <div class="card__window">
+        <div class="card__bar">
+          <span class="card__dot"></span><span class="card__dot"></span><span class="card__dot"></span>
+        </div>
+        <div class="card__preview card__preview--d"></div>
+      </div>
+      <div class="card__body">
+        <h3>Ferry Booking Flow</h3>
+        <p>A multi-step booking experience redesigned to cut drop-off by simplifying every form field.</p>
+        <ul class="card__stack">
+          <li>Next.js</li><li>Zod</li><li>Framer Motion</li>
+        </ul>
+      </div>
+      <a href="#" class="card__link">View project →</a>
+    </article>
+
+  </div>
+
+  <p class="work__note reveal">
+    ^ swap these four cards for your real projects — see the comment block at the top of style.css and script.js.
+  </p>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="section__head reveal">
+    <p class="eyebrow">// about.md</p>
+    <h2>How I work</h2>
+  </div>
+
+  <div class="about__grid">
+    <p class="about__bio reveal">
+      I'm Abidemi, a front-end developer who cares about the last 10% —
+      the transition that's a beat too slow, the button that's a pixel off,
+      the state that's technically handled but feels wrong. I like turning
+      ambiguous designs into systems: reusable, accessible, and fast enough
+      that no one ever has to think about performance.
+    </p>
+
+    <div class="about__imports reveal">
+      <pre class="imports__code"><span class="tok-kw">import</span> {
+  <span class="tok-var">React</span>,
+  <span class="tok-var">TypeScript</span>,
+  <span class="tok-var">Tailwind</span>,
+  <span class="tok-var">Vue</span>,
+  <span class="tok-var">Vite</span>,
+  <span class="tok-var">Accessibility</span>,
+  <span class="tok-var">Motion</span>
+} <span class="tok-kw">from</span> <span class="tok-str">'abidemi/skills'</span>;</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="section__head reveal">
+    <p class="eyebrow">// contact.sh</p>
+    <h2>Let's build something</h2>
+  </div>
+
+  <div class="terminal reveal">
+    <div class="editor__bar">
+      <span class="editor__dot editor__dot--r"></span>
+      <span class="editor__dot editor__dot--y"></span>
+      <span class="editor__dot editor__dot--g"></span>
+      <span class="editor__filename">contact.sh</span>
+    </div>
+    <div class="terminal__body">
+      <p><span class="prompt">$</span> open --email</p>
+      <p class="terminal__out"><a href="mailto:hello@abidemi.dev">hello@abidemi.dev</a></p>
+      <p><span class="prompt">$</span> open --socials</p>
+      <p class="terminal__out">
+        <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">Twitter / X</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Abidemi's Portfolio — built with plain HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
